@@ -94,6 +94,7 @@ clearlist 'ItemTypes'
 @pushlist 'ItemTypes' 0x13be //Chainmail Leggins
 @pushlist 'ItemTypes' 0x1c09 //Chainmail Skirt
 @pushlist 'ItemTypes' 0x13c4 //Chainmail Tunic
+@pushlist 'ItemTypes' 0x13f2 //Chainmail Gloves
 //Ringmail
 @pushlist 'ItemTypes' 0x13ee //Ringmail Sleeves
 @pushlist 'ItemTypes' 0x13eb //Ringmail Gloves
@@ -102,7 +103,7 @@ clearlist 'ItemTypes'
 @pushlist 'ItemTypes' 0x140b //Ringmail Helm
 //Studded
 @pushlist 'ItemTypes' 0x13e1 //Studded Leggings
-@pushlist 'ItemTypes' 0x13db //Studded Tunic
+@pushlist 'ItemTypes' 0x13e2 //Studded Tunic
 @pushlist 'ItemTypes' 0x13d5 //Studded Gloves
 @pushlist 'ItemTypes' 0x13d6 //Studded Gorget
 @pushlist 'ItemTypes' 0x13d4 //Studded Sleeves
@@ -174,8 +175,11 @@ clearlist 'ItemTypes'
 @pushlist 'ItemTypes' 0xe9e //Tamborine
 @pushlist 'ItemTypes' 0xe9c //Drums
 @pushlist 'ItemTypes' 0xeb2 //Harp
+@pushlist 'ItemTypes' 0xeb3 //Lute
+@pushlist 'ItemTypes' 0x2805 //Bamboo Flute
 //Wands
 @pushlist 'ItemTypes' 0xdf4 //Slayer Wand
+@pushlist 'ItemTypes' 0xdf2 //Magic Wand
 // !!*** End of Data Init ***!!
 //
 //
@@ -214,6 +218,10 @@ for 0 to 'ItemTypes'
     elseif @injournal 'exceedingly potent' 'system'
       moveitem found 'stufftokeep'
       headmsg 'EXCEEDINGLY' '2213'
+      @clearjournal
+    elseif @injournal 'surpassingly potent' 'system'
+      moveitem found 'stufftokeep'
+      headmsg 'surpassingly potent' '2213'
       @clearjournal
     elseif @injournal 'Power' 'system'
       moveitem found 'stufftokeep'
