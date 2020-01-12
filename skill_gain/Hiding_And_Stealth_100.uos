@@ -1,0 +1,20 @@
+if skill 'hiding' < 80
+  useskill 'hiding'
+  pause 11000
+else
+  while not buffexists 'hiding' and skill 'stealth' < 100
+    useskill 'hiding'
+    pause 11000
+  endwhile
+  while buffexists 'hiding' and skill 'stealth' < 100
+    useskill 'stealth'
+    pause 11000
+  endwhile
+  while skill 'stealth' == 100 and skill 'hiding' < 100
+    useskill 'hiding'
+    pause 11000
+  endwhile
+  if skill 'stealth' == 100 and skill 'hiding' == 100
+    stop
+  endif
+endif
