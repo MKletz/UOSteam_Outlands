@@ -79,8 +79,8 @@ clearlist 'ItemTypes'
 @pushlist 'ItemTypes' 0x1453 //Bone Arms
 @pushlist 'ItemTypes' 0x1455 //Bone Gloves
 //Platemail
-@pushlist 'ItemTypes' 0x1408 //Close Helmet
-@pushlist 'ItemTypes' 0x1410 //Platemail Arms
+@pushlist 'ItemTypes' 0x1409 //Close Helmet
+@pushlist 'ItemTypes' 0x1417 //Platemail Arms
 @pushlist 'ItemTypes' 0x1411 //Platemail Legs
 @pushlist 'ItemTypes' 0x1412 //Plate Helm
 @pushlist 'ItemTypes' 0x1413 //Plate Gorget
@@ -89,8 +89,9 @@ clearlist 'ItemTypes'
 @pushlist 'ItemTypes' 0x140a //Helmet
 @pushlist 'ItemTypes' 0x140c //Bascinet
 @pushlist 'ItemTypes' 0x140f //Norse Helm
+@pushlist 'ItemTypes' 0x1c05 //Female Platemail chest
 //Chainmail
-@pushlist 'ItemTypes' 0x13bb //Chainmail Coif
+@pushlist 'ItemTypes' 0x13c0 //Chainmail Coif
 @pushlist 'ItemTypes' 0x13be //Chainmail Leggins
 @pushlist 'ItemTypes' 0x1c09 //Chainmail Skirt
 @pushlist 'ItemTypes' 0x13c4 //Chainmail Tunic
@@ -219,7 +220,7 @@ for 0 to 'ItemTypes'
       @clearjournal
     elseif @injournal 'exceedingly potent' 'system'
       moveitem found 'stufftokeep'
-      headmsg 'EXCEEDINGLY' '2213'
+      headmsg 'exceedingly' '2213'
       @clearjournal
     elseif @injournal 'surpassingly potent' 'system'
       moveitem found 'stufftokeep'
@@ -353,7 +354,7 @@ for 0 to 'ItemTypes'
       moveitem found 'stufftokeep'
       headmsg 'Balron' '2213'
       @clearjournal
-    //Armor Keeps
+      //Armor Keeps
     elseif @injournal 'Invulnerability' 'system'
       moveitem found 'stufftokeep'
       headmsg 'Invulnerability' '2213'
@@ -390,7 +391,7 @@ for 0 to 'ItemTypes'
       moveitem found 'stufftokeep'
       headmsg 'Studded Armor!!' '2213'
       @clearjournal
-    //Instrument Keeps
+      //Instrument Keeps
     elseif @injournal 'surpassingly melodious' 'system'
       moveitem found 'stufftokeep'
       headmsg 'surpassingly melodious!!' '2213'
