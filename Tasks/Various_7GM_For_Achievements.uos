@@ -1,0 +1,46 @@
+if not @findalias 'item_Target'
+  promptalias 'item_Target'
+endif
+if not @findalias 'mobile_Target'
+  promptalias 'mobile_Target'
+endif
+
+if skill 'Arms Lore' < 100
+    useskill 'Arms Lore'
+    waitfortarget 15000
+    target! 'item_Target'
+    pause 3000
+endif
+
+if skill 'Item Identification' < 100
+    useskill 'Item Identification'
+    waitfortarget 15000
+    target! 'item_Target'
+    pause 3000
+endif
+
+if skill 'Anatomy' < 100
+    useskill 'Anatomy'
+    waitfortarget 15000
+    target! 'mobile_Target'
+    pause 3000
+endif
+
+if skill 'Evaluating Intelligence' < 100
+    useskill 'Evaluating Intelligence'
+    waitfortarget 15000
+    target! 'mobile_Target'
+    pause 3000
+endif
+
+if skill 'Detecting Hidden' < 100
+    useskill 'Detecting Hidden'
+    waitfortarget 15000
+    target! 'self'
+    pause 10000
+endif
+
+if skill 'Hiding' < 100
+    useskill 'Hiding'
+    pause 10000
+endif
