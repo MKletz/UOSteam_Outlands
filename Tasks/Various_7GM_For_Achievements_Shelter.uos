@@ -44,3 +44,10 @@ if skill 'Hiding' < 70
     useskill 'Hiding'
     pause 10000
 endif
+
+if skill 'Taste Identification' < 70
+    useskill 'Taste Identification'
+    waitfortarget 15000
+    targettileoffset 0 0 0
+    pause 10000
+endif
