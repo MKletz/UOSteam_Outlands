@@ -52,6 +52,9 @@
 @pushlist 'Tamables' 0xc // 95% Dragon
 @pushlist 'Tamables' 0x27 // 95% Molten Mongbat
 @pushlist 'Tamables' 0x33 // 100% Snowdrift
+@pushlist 'Tamables' 0x181 // 105% Acarid
+@pushlist 'Tamables' 0x3x // 105% Eldritch Drake
+@pushlist 'Tamables' 0x3c // 105% Ember Drake
 @pushlist 'Tamables' 0x308 // 110% Aegis Minion
 @pushlist 'Tamables' 0x125 // 110% Sphinx
 @createlist 'Killables'
