@@ -206,200 +206,34 @@ for 0 to 'ItemTypes'
     // !!*** Could use switchs bleh )
     // !!*****************************************!!
     //Weapon Keeps
-    if @injournal 'Silver' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Silver' '2213'
-      @clearjournal
-    elseif @injournal 'Vanquishing' 'system'
+    if @injournal 'Vanquishing' 'system'
       moveitem found 'stufftokeep'
       headmsg 'Vanquishing' '2213'
       @clearjournal
-    elseif @injournal 'supremely potent' 'system'
+    elseif @injournal 'supremely' 'system'
       moveitem found 'stufftokeep'
       headmsg 'supremely' '2213'
       @clearjournal
-    elseif @injournal 'exceedingly potent' 'system'
+    elseif @injournal 'exceedingly' 'system'
       moveitem found 'stufftokeep'
       headmsg 'exceedingly' '2213'
-      @clearjournal
-    elseif @injournal 'surpassingly potent' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'surpassingly potent' '2213'
       @clearjournal
     elseif @injournal 'Power' 'system'
       moveitem found 'stufftokeep'
       headmsg 'Power' '2213'
       @clearjournal
-    elseif @injournal 'Exorcism' 'system'
+    elseif @injournal 'Slaying' 'system'
       moveitem found 'stufftokeep'
-      headmsg 'Exorcisim' '2213'
-      @clearjournal
-    elseif @injournal 'Air' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Air' '2213'
-      @clearjournal
-    elseif @injournal 'Daemon' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Daemon' '2213'
-      @clearjournal
-    elseif @injournal 'Gargoyle' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Gargoyle' '2213'
-      @clearjournal
-    elseif @injournal 'Fey' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Fey' '2213'
-      @clearjournal
-    elseif @injournal 'Respond' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Respond' '2213'
-      @clearjournal
-    elseif @injournal 'Repond' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Repond' '2213'
-      @clearjournal
-    elseif @injournal 'Vacuum' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Vacuum' '2213'
-      @clearjournal
-    elseif @injournal 'Flame' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Flame' '2213'
-      @clearjournal
-    elseif @injournal 'Elemental' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Elemental' '2213'
-      @clearjournal
-    elseif @injournal 'Earth' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Earth' '2213'
-      @clearjournal
-    elseif @injournal 'Water' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Water' '2213'
-      @clearjournal
-    elseif @injournal 'Ogre' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Ogre' '2213'
-      @clearjournal
-    elseif @injournal 'Orc' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Orc' '2213'
-      @clearjournal
-    elseif @injournal 'Arachnid' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Arachnid' '2213'
-      @clearjournal
-    elseif @injournal 'Spider' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Spider' '2213'
-      @clearjournal
-    elseif @injournal 'Scorpion' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Scorpion' '2213'
-      @clearjournal
-    elseif @injournal 'Terathan' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Terathan' '2213'
-      @clearjournal
-    elseif @injournal 'Reptile' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Reptile' '2213'
-      @clearjournal
-    elseif @injournal 'Dragon' 'system'
-      headmsg 'Dragon' '2213'
-      moveitem found 'stufftokeep'
-      @clearjournal
-    elseif @injournal 'Lizardman' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Lizardman' '2213'
-      @clearjournal
-    elseif @injournal 'Ophidian' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Ophidan' '2213'
-      @clearjournal
-    elseif @injournal 'Snake' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Snake' '2213'
-      @clearjournal
-    elseif @injournal 'Undead' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Undead' '2213'
-      @clearjournal
-    elseif @injournal 'Blood' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Blood' '2213'
-      @clearjournal
-    elseif @injournal 'Poison' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Poison' '2213'
-      @clearjournal
-    elseif @injournal 'Troll' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Troll' '2213'
-      @clearjournal
-    elseif @injournal 'Fire' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Fire' '2213'
-      @clearjournal
-    elseif @injournal 'Snow' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Snow' '2213'
-      @clearjournal
-    elseif @injournal 'Demon' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Demon' '2213'
-      @clearjournal
-    elseif @injournal 'Balron' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Balron' '2213'
+      headmsg 'Slaying' '2213'
       @clearjournal
       //Armor Keeps
     elseif @injournal 'Invulnerability' 'system'
       moveitem found 'stufftokeep'
       headmsg 'Invulnerability' '2213'
       @clearjournal
-    elseif @injournal 'Fortification' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Fortification' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Gloves' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Gloves' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Sleeves' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Sleeves' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Tunic' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Tunic' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Leggings' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Leggings' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Gorget' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Gorget' '2213'
-      @clearjournal
-    elseif @injournal 'Leather Cap' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Leather Cap' '2213'
-      @clearjournal
-    elseif @injournal 'studded' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'Studded Armor!!' '2213'
-      @clearjournal
-      //Instrument Keeps
-    elseif @injournal 'surpassingly melodious' 'system'
-      moveitem found 'stufftokeep'
-      headmsg 'surpassingly melodious!!' '2213'
-      @clearjournal
     endif
     @clearjournal
   endwhile
 endfor
-msg '[e whistle'
 headmsg 'All Done' '2124'
 stop

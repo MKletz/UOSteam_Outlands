@@ -281,12 +281,8 @@ while skill 'Alchemy' < 100
   @useobject 'found'
   waitforgump 0x38920abd 5000
   //
-  // If keg is new, calibrate potion type
+  // Calibrate potion type
   //
-  if @findtype 0x1940 0 'backpack'
-    //
-    // ** Potion select **
-    //
     if @inlist 'potion' 'Lesser Heal'
       replygump 0x38920abd 100
       waitforgump 0x38920abd 5000
@@ -384,13 +380,6 @@ while skill 'Alchemy' < 100
       pause 5000
       continue
     endif
-    //
-    // We know the potion, make last
-    //
-  else
-    // press make last
-    @replygump 0x38920abd 7
-  endif
   //
   // Wait for results
   // (for UOSteam I find single conditionals safer than concatenated)
