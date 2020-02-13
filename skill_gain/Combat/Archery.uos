@@ -1,0 +1,60 @@
+if not @findalias 'zooAnimal'
+  headmsg 'Select the animal to shoot'
+  promptalias 'zooAnimal'
+endif
+if not @findalias 'packAnimal'
+  headmsg 'Select the pack animal with ore'
+  promptalias 'packAnimal'
+endif
+while skill 'archery' < 100
+  // refill bolts
+  if counttype 0x1bfb 'any' 'backpack' < 5
+    movetype 0x1bfb 'packAnimal' 'backpack' 0 0 0 'any' 60
+    pause 500
+  endif
+  // drain stam
+  while 'stam' > 0
+    if 'weight' < 'maxweight'
+      movetype 0x19b9 'packAnimal' 'backpack' 0 0 0 'any' 63
+      pause 1000
+    endif
+    walk 'North'
+    pause 100
+    walk 'North'
+    pause 100
+    walk 'South'
+    pause 100
+    walk 'South'
+    pause 100
+  endwhile
+  // unload ore
+  pause 500
+  movetype 0x19b9 'backpack' 'packAnimal' 0 0 0 'any' 63
+  pause 1000
+  // reset position
+  walk 'South'
+  pause 100
+  walk 'South'
+  pause 100
+  walk 'South'
+  pause 100
+  walk 'South'
+  pause 1000
+  walk 'North'
+  pause 100
+  walk 'North'
+  pause 500
+  attack 'zooAnimal'
+  pause 1000
+  warmode 'on'
+  pause 200
+  warmode 'off'
+  pause 200
+  walk 'south'
+  pause 100
+  walk 'south'
+  pause 100
+  walk 'south'
+  pause 2000
+endwhile
+logoutbutton
